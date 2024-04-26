@@ -1,15 +1,18 @@
 package org.example.Models;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.example.Models.Enums.ParkingStatus;
 import org.example.Models.Enums.VehicleType;
 
 import java.util.List;
-
-public class ParkingSpot {
-    Long id;
-    Long parkingSpotNum;
-    ParkingStatus parkingStatus;
-    List<VehicleType> vehicleTypeList;
-    ParkingFloor parkingFloor;
+@Getter
+@Setter
+public class ParkingSpot extends BaseModel{
+    private Long id;
+    private Long parkingSpotNum;
+    private ParkingStatus parkingStatus;
+    private List<VehicleType> vehicleTypeList;
+    private ParkingFloor parkingFloor;
 
 }

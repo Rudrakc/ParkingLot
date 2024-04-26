@@ -1,12 +1,15 @@
 package org.example.Models;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.example.Models.Enums.GateType;
-
-public class Gate {
-    Long id;
-    int GateNum;
-    GateType gateType;
-    Operator operator;
+@Getter
+@Setter
+public class Gate extends BaseModel{
+    private Long id;
+    private int GateNum;
+    private GateType gateType;
+    private Operator operator;
 
 
 }

@@ -8,10 +8,10 @@ import org.example.Models.Enums.Status;
 import java.time.LocalTime;
 @Getter
 @Setter
-public class Payment {
-    Long id;
-    PaymentMode paymentMode;
-    int amount;
-    LocalTime time;
-    Status status;
+public class Payment extends BaseModel{
+    private Long id;
+    private PaymentMode paymentMode;
+    private int amount;
+    private LocalTime time;
+    private Status status;
 }

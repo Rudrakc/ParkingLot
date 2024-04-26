@@ -9,11 +9,11 @@ import java.util.List;
 
 @Getter
 @Setter
-public class Bill {
-    Long id;
-    Ticket ticket;
-    LocalTime exitTime;
-    int amount;
-    List<Payment> payments;
-    Status status;
+public class Bill extends BaseModel{
+    private Long id;
+    private Ticket ticket;
+    private LocalTime exitTime;
+    private int amount;
+    private List<Payment> payments;
+    private Status status;
 }
